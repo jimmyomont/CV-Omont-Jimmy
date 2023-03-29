@@ -20,19 +20,10 @@
             display: block;
         }
     }
+    &__list {
+        @include mixin.large {
+            display: none;
+        }
+    }
 
-    // &__liste{
-    //     margin-left: 2rem;
-    //     margin-bottom: 1rem;
-    // }
-
-    // &__qrCode {
-    //     display: none;
-    //     @media print {
-    //         display: block;
-    //         text-align: end;
-    //         margin-top: 4rem;
-    //         margin-right: 2rem;
-    //     }
-    // }
 }
