@@ -1,6 +1,6 @@
 @use '../components/mixin';
 .formation {
-    min-width: 50%;
+    min-width: 39em;
     background-color: rgb(242, 231, 231);
     color: rgb(59, 59, 59);
     
@@ -20,7 +20,7 @@
     &__flex {
         margin-top: 2em;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         @include mixin.large {
             flex-direction: row;
         }
