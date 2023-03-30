@@ -1,8 +1,9 @@
 @use '../components/mixin';
 .formation {
+    min-width: 50%;
     background-color: rgb(242, 231, 231);
     color: rgb(59, 59, 59);
-    min-width: 39em;
+    
     padding: 1.5rem;
     @include mixin.large {
         min-width: 30em;
@@ -19,10 +20,14 @@
     &__flex {
         margin-top: 2em;
         display: flex;
+        flex-direction: column;
+        @include mixin.large {
+            flex-direction: row;
+        }
     }
     }
-.formationMobile{
-    @include mixin.large {
-        display: none;
+    .formationMobile{
+        @include mixin.large {
+            display: none;
+        }
     }
-}
