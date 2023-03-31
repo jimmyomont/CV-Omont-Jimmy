@@ -52,5 +52,9 @@ main {
     @include mixin.large {
         display: block;
     }
+    @media print {
+        width: 50%;
+        display: block;
+    }
 }
 

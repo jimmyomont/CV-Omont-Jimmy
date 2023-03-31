@@ -1,14 +1,15 @@
 @use '../components/mixin';
 .formation {
-    // min-width: 39em;
     background-color: rgb(242, 231, 231);
     color: rgb(59, 59, 59);
-    
     padding: 1.5rem;
     @include mixin.large {
-        // min-width: 30em;
         height: 45rem;
     }
+    @media print {
+        padding: 0;
+    }
+
     &__list {
         font-size: 1em;
         padding-right: 1.5rem;
@@ -24,6 +25,9 @@
         @include mixin.large {
             flex-direction: row;
         }
+        @media print {
+            flex-direction: row;
+        }
     }
     &__card {
         display: flex;
@@ -31,6 +35,9 @@
     }
     .formationMobile{
         @include mixin.large {
+            display: none;
+        }
+        @media print {
             display: none;
         }
     }
