@@ -1,13 +1,13 @@
 @use '../components/mixin';
 .formation {
-    min-width: 39em;
+    // min-width: 39em;
     background-color: rgb(242, 231, 231);
     color: rgb(59, 59, 59);
     
     padding: 1.5rem;
     @include mixin.large {
-        min-width: 30em;
-        height: 48rem;
+        // min-width: 30em;
+        height: 45rem;
     }
     &__list {
         font-size: 1em;
@@ -20,10 +20,13 @@
     &__flex {
         margin-top: 2em;
         display: flex;
-        // flex-direction: column;
+        flex-direction: column;
         @include mixin.large {
             flex-direction: row;
         }
+    }
+    &__card {
+        display: flex;
     }
     }
     .formationMobile{

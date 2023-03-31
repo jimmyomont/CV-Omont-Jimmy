@@ -3,9 +3,9 @@
 .experience {
     width: 65%;
     color: rgb(59, 59, 59);
-    min-width: 21em;
+    // min-width: 21em;
     padding: 1rem;
-    height: 45rem;
+    // height: 45rem;
     @include mixin.large {
         min-width: 30em;
         padding: 1rem;
