@@ -4,7 +4,7 @@
     color: rgb(59, 59, 59);
     padding: 1.5rem;
     @include mixin.large {
-        height: 45rem;
+        // height: 45rem;
     }
     @media print {
         padding: 0;
